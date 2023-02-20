@@ -1,0 +1,160 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  background: white;
+  color: #4a4d4a;
+}
+
+h1 {
+  background: url("https://dy7glz37jgl0b.cloudfront.net/betterhelp_two/css-elements/bg-gradient-texture.png");
+  background-size: cover;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+}
+
+.accordion {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: white;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 2rem;
+  border: 1px solid silver;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+.accordion {
+  width: 200%;
+}
+
+.w-90 {
+  width: 200%;
+}
+.accordion {
+  width: 90%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 14px;
+  width: 90%;
+  margin: auto;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-therapyLightGreen;
+}
+
+.card-image {
+  background: url("../assets/rectangle-12.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bullet {
+  margin-bottom: 15px;
+}
+
+.bullet::before {
+  content: "";
+  display: inline-block;
+  border: 2px solid white;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+@media (min-width: 550px) and (max-width: 819px) {
+  .custom-card {
+    width: 70%;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 950px) {
+  .custom-card {
+    width: 95%;
+  }
+}
+
+.table :where(thead, tfoot) :where(th, td) {
+  --tw-bg-opacity: 1;
+  background-color: #9bd58b;
+  font-size: 0.75rem /* 12px */;
+  line-height: 1rem /* 16px */;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.table :where(tbody th, tbody td) {
+  --tw-bg-opacity: 1;
+  font-size: 12px;
+}
+:where(.table *:first-child) :where(*:first-child) :where(th, td):first-child {
+  border-top-left-radius: 0;
+}
+:where(.table *:first-child) :where(*:first-child) :where(th, td):last-child {
+  border-top-right-radius: 0;
+}
+:where(.table *:last-child) :where(*:last-child) :where(th, td):first-child {
+  border-bottom-left-radius: 0;
+}
+:where(.table *:last-child) :where(*:last-child) :where(th, td):last-child {
+  border-bottom-right-radius: 0;
+}
